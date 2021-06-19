@@ -1,0 +1,86 @@
+*{
+    font-family: Arial;
+    color: blanchedalmond;
+
+    
+   
+}
+body{
+    
+    background-color: rgba(0, 0, 0, 0.973);
+}
+header{
+    height: 100px;
+    
+}
+section{
+    height: 1400px;
+    background-image:url(../imagnes/fondo.jpg) ;
+    background-size: 1250px 1200px ;
+    background-position-y: -100px;
+    background-repeat: no-repeat
+    
+}
+footer{
+    height: 140px;
+    border-top: red solid;
+    
+}
+
+#imagen{
+    width: 250px;
+    height: 50px;
+    
+   
+   
+}
+#titulo2{
+    position: relative;
+    left: 600px;
+    display: inline;   
+}
+.tarjeta{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    top: 700px;
+    margin: 50px;
+    left: 80px;
+
+}
+.Nombretarjeta{
+    position: absolute ;
+    display: inline;
+    text-align: center;
+    top: 1070px;
+}
+#star{
+    left: 200px;
+}
+#nebulosa{
+    left: 540px;
+}
+#universo{
+    left: 900px;
+}
+footer>img{
+    position:relative;
+    width: 15%;
+    margin: 0%;
+    left: 30%;
+    
+    
+}
+footer>h2{
+    display: inline;
+    position: relative;
+    top: -45%;
+    left: 28%;
+    
+}
+footer>h3{
+    position: relative;
+    
+    top: -45%;
+    left: 43.5%;
+}
