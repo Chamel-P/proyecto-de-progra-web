@@ -2,57 +2,47 @@
     font-family: Arial;
     color: blanchedalmond;
 
-    
-   
 }
 body{
-    
-    background-color: rgba(0, 0, 0, 0.973);
+    height: 100%;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
 }
 header{
-    height: 100px;
+    height: 150px;
+}
+header>img{
     
+    width: 350px;
+    height: 150px;
+}
+header>h2{
+    position: relative;
+    margin-left: 40%;
+    top: -45%;
+    display: inline; 
 }
 section{
-    height: 1400px;
-   background-color: black;
-    
+    height: 1000px;
+    width: 100%;
+    background-position: center center;
+    background-image:url(../imagnes/fondo.jpg) ;
+    background-repeat: no-repeat;
+    background-position-y: 7%;
 }
 footer{
-    height: 140px;
+    height: 130px;
+    width: 100%;
     border-top: red solid;
-    
-}
-#imagen{
-    width: 250px;
-    height: 50px;
-    
-   
-   
-}
-#titulo2{
-    position: relative;
-    left: 600px;
-    display: inline;   
 }
 footer>img{
-    position:relative;
+    margin-left: 28%;
+    margin-top: 0.5%;
     width: 15%;
-    margin: 0%;
     left: 30%;
-    
-    
 }
-footer>h2{
-    display: inline;
+.TF{
     position: relative;
-    top: -45%;
-    left: 28%;
-    
-}
-footer>h3{
-    position: relative;
-    
-    top: -45%;
-    left: 43.5%;
+    top: -85%;
+    left: 39%;   
 }
