@@ -1,36 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarBank</title>
-    <link rel="stylesheet" href="../estilo/solicitud-tarjetas.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"
+        href="D:\Ulead\Programacion Web\StartBank\proyecto-de-progra-web-master\estilo\solicitud-tarjetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <header>
-        <img id="imagen" src="../imagnes/ESTRELLA.png" alt="">
-        <h2 id="titulo2">El banco estrella de Costa Rica</h2>
+        <img src="../imagnes/ESTRELLA.png" alt="">
+        <h2>El banco estrella de Costa Rica</h2>
+        <table>
+            <tr>
+                <th><a href="solicitud-tarjetas.html">Tarjetas de Credito</a></th>
+                <th><a href="#Cuerpo">Seguros </a></th>
+                <th><a href="#Pie">Quienes somos </a></th>
+            </tr>
+        </table>
     </header>
-    <section>
+
+    <Formularios>
+        <img src="D:\Ulead\Programacion Web\StartBank\proyecto-de-progra-web-master\imagnes\Tarjetas2.PNG"
+            alt="Nuestra tarjetas">
+        <br></br>
+        <h1>Formulario de solicitud de tarjeta de crédito</h1>
+        <h1 class="destacado">Informacion personal</h1>
+        </div>
+        <div form method="get" action="accion.html" class="Informacion1">
+            <div>Nombre: <input type="text" name="nombre" required /><br />
+                <br />
+            </div>
+            <div>Apellidos: <input type="text" name="apellidos" required /><br />
+                <br />
+            </div>
+            <div>Numero de teléfono: <input type="number" name="celular" required /><br />
+                <br />
+            </div>
+            <div>Numero de teléfono adicional: <input type="number" name="numero casa" /><br />
+                <br />
+            </div>
+            <div Correo electrónico: input type="email" name="correo" required>
+            </div>
+
+            <div> Tipo de identificación: <select name="TipoDeCedulea" required>
+                    <option selected="selected">Cédula nacional</option>
+                    <option>DIMEX</option>
+                    <option>DIDI</option>
+                </select> <br />
+                <br />
+            </div>
+            <div>Número de identificación: <input type="number" name="cédula" placeholder="0-000-0000" required /><br />
+                <br>
+            </div>
+            <div>Dirección de entrega: <textarea name="direccion" required cols=30 rows=2></textarea><br /><br />
+                <br>
+            </div>
 
 
+            <h1 class="destacado">Informacion laboral</h1>
+            <div>
+                Empresa donde labora: <input type="text" name="empresa" required /><br />
+                <br />
+            </div>
+            <div> Puesto que desempeña: <input type="text" name="puesto" required /><br />
+                <br />
+            </div>
+            <div>Salario aproximado: <select name="salario" required>
+                    <option>₡500.000 a ₡600.000</option>
+                    <option>₡700.000 a ₡800.000</option>
+                    <option>Mas de ₡900.00</option>
+                </select> <br />
+                <br />
+            </div>
 
+            <div>
+                <h1>Tarjeta StartBank</h1>
 
+            </div>
+            <div><input type="radio" name="Tajeta1" id="star" value="star">
+                <label for="star">Star: </label>
+                <br /> <br />
+            </div>
 
+            <div><input type="radio" name="Tajeta2" id="Nebulosa" value="Nebulosa">
+                <label for="Nebulosa">Nebulosa: </label>
+                <br /> <br />
+            </div>
+            <div><input type="radio" name="Tajeta3" id="Universo" value="Universo">
+                <label for="Universo">Universo: </label>
+                <br /> <br />
+            </div>
+            <div><input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+                <br /> <br />
+            </div>
 
+        </div>
+        </form>
 
+    </Formularios>
 
-
-
-
-
-
-
-
-
-
-    </section>
     <footer>
         <img src="../imagnes/pie.png" alt="">
         <div class="TF">
@@ -38,5 +113,8 @@
             <h3>2496-8090 |SolucionStarBank.com</h3>
         </div>
     </footer>
+
+
 </body>
+
 </html>
