@@ -2,69 +2,40 @@
 *{
     font-family: Arial;
     color: blanchedalmond;
+
 }
-header{
-    height: 150px;
-}
-header>img{
-    
-    width: 350px;
-    height: 150px;
-}
-header>h2{
-    position: relative;
-    margin-left: 40%;
-    top: -45%;
-    display: inline; 
-}
-body{
-    height: 100%;
+
+#separator-ribbon{
+   
     width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+#separator-ribbon .content{
+  
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+body{
     background-color: rgb(7, 7, 7);
 }
-section{
-    height: 1000px;
-    width: 100%;
-    background-position: center center;
-    background-image:url(../imagnes/fondo.jpg) ;
-    background-repeat: no-repeat;
-    background-position-y: 7%;
-}
-
-.Bimg{
-    position:relative;
-    top: 65%;
-    text-align: center;
-    
-
-}
-.Bimg > img{
-    width: 25%;
-    height: 250px;
-    
-    margin-right: 40px;
-}
-
-.Timg > h2{
-    margin-right: 7%;
-    margin-left: 7%;
-   display: inline;
-
-}
-footer{
-    height: 130px;
-    width: 100%;
-
-}
-
-footer>img{
-    margin-left: 28%;
-    margin-top: 0.5%;
-    width: 15%;
-    left: 30%;
-}
-.TF{
-    position: relative;
-    top: -85%;
-    left: 39%;   
+#footer{
+    background: url(../imagnes/bg-04.png);
+    background-color: rgb(224, 144, 24);
+    background-size: 50px 50px;
 }
