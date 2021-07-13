@@ -7,75 +7,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarBank</title>
     <link rel="stylesheet" href="../estilo/Seguros.CSS">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilo/PrimeraPagina.css">
 </head>
 
 <body>
+
     <header>
-        <img src="../imagnes/ESTRELLA.png" alt="">
-        <h2>El banco estrella de Costa Rica</h2>
-        <table>
-            <tr>
-                <th><a href="solicitud-tarjetas.html">Tarjetas de Credito</a></th>
-                <th><a href="#Cuerpo">Seguros </a></th>
-                <th><a href="#Pie">Quienes somos </a></th>
-            </tr>
-        </table>
+        <nav class="navbar navbar-expand-sm navbar-dark " id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../imagnes/logo.png" alt="" width="200">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-sm navbar-dark ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col border border-6 border border-warning rounded-pill bg-warning  ">
+                            <a class="link-dark font-weight-bold  text-decoration-none" href="solicitud-tarjetas.html">Tarjetas de Credito</a>
+                        </div>
+                        <div class="col border border-6 border border-primary rounded-pill bg-primary">
+                            <a class="link-dark font-weight-bold text-decoration-none" href="#Cuerpo">Seguros </a>
+                        </div>
+                        <div class="col border border-6 border border-danger rounded-pill bg-danger">
+                            <a class="link-dark font-weight-bold text-decoration-none" href="#Pie">Quienes somos </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
     </header>
 
     <div class="Publicidad">
-        <img src="../imagnes/Nuestros seguros.png"
-            alt="Seguros StartBank">
+        <img src="../imagnes/Nuestros seguros.png" alt="Seguros StartBank">
         <h1>¿Desea obtener mas informacion?</h1>
         <h2>No dude en llenar nuestro formulario para ser contactado</h2>
     </div>
 
-    <Formularios>
+    <section class="registro">
+        <h1 id="Titulo">Solicitud de Tarjetas</h1>
+        <input class="controles" type="text" name="Nombres" id="nombres" placeholder="Ingrese Nombre">
+        <input class="controles" name="Apellidos" id="Apellidos" placeholder="Ingrese Apellidos">
+        <input class="controles" type="number" name="numero" id="tlf" placeholder="Ingrese telefono celular">
+        <input class="controles" type="number" name="numero casa" id="tlfC" placeholder="Ingrese telefono de casa">
+        <input class="controles" type="email" name="correos" id="correo" placeholder="Ingrese correo">
+        <div class="controles">
+            <label for="exampleFormControlSelect1">Tipo de identificacion</label>
+            <select class="form-control" id="Select1">
+                <option class="color1" selected="selected">Cédula nacional</option>
+                <option class="color1">DIMEX</option>
+                <option class="color1">DIDI</option>
+            </select>
         </div>
-        <div form method="get" action="accion.html" class="Informacion1">
-            <div>Nombre: <input type="text" name="nombre" required /><br />
-                <br />
-            </div>
-            <div>Apellidos: <input type="text" name="apellidos" required /><br />
-                <br />
-            </div>
-            <div>Numero de teléfono: <input type="number" name="celular" required /><br />
-                <br />
-            </div>
-            <div>Numero de teléfono adicional: <input type="number" name="numero casa" /><br />
-                <br />
-            </div>
-            <div Correo electrónico: input type="email" name="correo" required>
-            </div>
-
-            <div> Tipo de identificación: <select name="TipoDeCedulea" required>
-                    <option selected="selected">Cédula nacional</option>
-                    <option>DIMEX</option>
-                    <option>DIDI</option>
-                </select> <br />
-                <br />
-            </div>
-            <div>Número de identificación: <input type="number" name="cédula" placeholder="0-000-0000" required /><br />
-                <br>
-            </div>
-            <div>Informacion adicional: <textarea name="direccion" required cols=30 rows=2></textarea><br /><br />
-                <br>
-
-            </div>
-            <div><input type="submit" value="Enviar">
-                <input type="reset" value="Cancelar">
-                <br /> <br />
-            </div>
+        <input class="controles" type="number" name="cédula" id="correo" placeholder="0-000-0000" required>
+        <div class="controles">
+            <label for="exampleFormControlSelect1">informacion adicional</label>
+            <textarea class="color1" name="direccion" required cols=30 rows=2></textarea>
         </div>
 
-        <footer>
-            <img src="../imagnes/pie.png" alt="">
-            <div class="TF">
-                <h2>solucion galactica</h2>
-                <h3>2496-8090 |SolucionStarBank.com</h3>
+
+
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+                <div class="col">
+                    <input class="boton" type="reset" value="Cancelar">
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer" class="p-4">
+            <div class="container w-100 ">
+
+                <div class="row justify-content-md-center py-5">
+                    <div class="col text-center font-weight-light">
+                        <p class="font-weight-bold text-dark h1"> Servicio al cliente telefonico</p>
+
+                        <div class="container w-50 pt-1">
+                            <p class="h5 text-danger">Servicio al cliente telefonico donde usted puede ponerse en
+                                contacto con un
+                                asesor de servicio quien le brindara repuesta a sus consultas sobre nuestro
+                                productos y servicios.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row"></div>
+            </div>
+
+
+            <div class="row row-cols-md-2 justify-content-md-center">
+                <div class="col text-center">
+                    <a href="#">
+                        <button
+                            class="btn btn-lg rounded-pill btn-warning w-75  p-2 shadow-sm font-weight-bold">Contacta
+                            con nuestro <br> Chatboot</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 
 </body>
 
