@@ -39,3 +39,10 @@ body{
     background-color: rgb(224, 144, 24);
     background-size: 50px 50px;
 }
+.borde2{
+ border: solid rgb(4, 158, 185) ;
+ border-radius: 10px;
+ margin: 10px;
+ padding-top: 10px;
+    
+}
