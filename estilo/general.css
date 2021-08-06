@@ -1,0 +1,28 @@
+*{
+    font-family: Arial;
+    color: blanchedalmond;
+    text-align: center;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+.boton2 {
+    width: 25%;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    text-decoration: none;
+   
+}
+body{
+    background-color: rgb(7, 7, 7);
+}
+#footer{
+    background: url(../imagnes/bg-04.png);
+    background-color: rgb(224, 144, 24);
+    background-size: 50px 50px;
+}

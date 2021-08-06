@@ -6,18 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilo/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilo/PrimeraPagina.css">
-    <link rel="stylesheet" href="../estilo/solicitud-tarjetas.css">
     <link rel="stylesheet" href="../estilo/Seguros.CSS">
+    <link rel="stylesheet" href="../estilo/estilos.css">
+    <link rel="stylesheet" href="../estilo/general.css">
+    
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark " id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../codigoHtml/PaginaPrincipal.html">
                     <img src="../imagnes/logo.png" alt="" width="200">
                 </a>
 
@@ -35,13 +34,16 @@
                 <div class="container ">
                     <div class="row ">
                         <div class="col border border-6 border border-warning rounded-pill bg-warning  ">
-                            <a class="link-dark font-weight-bold  text-decoration-none" href="solicitud-tarjetas.html">Tarjetas de Credito</a>
+                            <a class="link-dark font-weight-bold  text-decoration-none"
+                                href="../codigoHtml/solicitud-tarjetas.html">Tarjetas de Credito</a>
                         </div>
                         <div class="col border border-6 border border-primary rounded-pill bg-primary">
-                            <a class="link-dark font-weight-bold text-decoration-none" href="#Cuerpo">Seguros </a>
+                            <a class="link-dark font-weight-bold text-decoration-none"
+                                href="../codigoHtml/Seguros.html">Seguros </a>
                         </div>
                         <div class="col border border-6 border border-danger rounded-pill bg-danger">
-                            <a class="link-dark font-weight-bold text-decoration-none" href="#Pie">Quienes somos </a>
+                            <a class="link-dark font-weight-bold text-decoration-none"
+                                href="../codigoHtml/QuienesSomos.html">¿Quiénes somos?</a>
                         </div>
                     </div>
                 </div>
@@ -50,92 +52,75 @@
         </nav>
     </header>
 
-    <Formularios>
-        <img src="..\imagnes\Tarjetas2.PNG" alt="Nuestra tarjetas">
-        <br></br>
-        <h1>Formulario de solicitud de tarjeta de crédito</h1>
-        <h1 class="destacado">Informacion personal</h1>
-        
 
-        <section class="registro">
-            <h1 id="Titulo">Solicitud de Tarjetas</h1>
-            <input class="controles" type="text" name="Nombres" id="nombres" placeholder="Ingrese Nombre">
-            <input class="controles" name="Apellidos" id="Apellidos" placeholder="Ingrese Apellidos">
-            <input class="controles" type="number" name="numero" id="tlf" placeholder="Ingrese telefono celular">
-            <input class="controles" type="number" name="numero casa" id="tlfC" placeholder="Ingrese telefono de casa">
-            <input class="controles" type="email" name="correos" id="correo" placeholder="Ingrese correo">
+    <section class="registro">
+        <form>
+            <h1 id="Titulo">Informacion personal</h1>
+            <input class="controles" type="text" name="Nombres" id="nombres" placeholder="Ingrese Nombre" required>
+            <input class="controles" name="Apellidos" id="Apellidos" placeholder="Ingrese Apellidos" required>
+            <input class="controles" type="text" name="numero" id="tlf" placeholder="Ingrese telefono celular" required>
+            <input class="controles" type="text" name="numero casa" id="tlfC" placeholder="Ingrese telefono de casa"
+                required>
+            <input class="controles" type="email" name="correos" id="correo" placeholder="Ingrese correo" required>
             <div class="controles">
                 <label for="exampleFormControlSelect1">Tipo de identificacion</label>
-                <select class="form-control" id="Select1">
+                <select class="form-control" id="Select1" required>
                     <option class="color1" selected="selected">Cédula nacional</option>
                     <option class="color1">DIMEX</option>
                     <option class="color1">DIDI</option>
                 </select>
             </div>
-            <input class="controles" type="number" name="cédula" id="correo" placeholder="0-000-0000" required>
+            <input class="controles" type="text" name="cédula" id="correo" placeholder="0-000-0000" required>
+
+            <h1 class="Titulo">Informacion laboral</h1>
+
+            <input class="controles" type="text" name="Empresa" id="Empresa" placeholder="Empresa donde labora"
+                required>
+            <input class="controles" type="text" name="Puesto" id="Puesto" placeholder="Puesto que desempeña" required>
             <div class="controles">
-                <label for="exampleFormControlSelect1">informacion adicional</label>
-                <textarea class="color1" name="direccion" required cols=30 rows=2></textarea>
+                <label for="exampleFormControlSelect1">Salario aproximado</label>
+                <select class="form-control" id="Select1">
+                    <option class="color1" selected="selected">₡500.000 a ₡600.000</option>
+                    <option class="color1">₡700.000 a ₡800.000</option>
+                    <option class="color1">Mas de ₡900.00</option>
+                </select>
             </div>
-    
-    
-    
+
+            <div>
+                <h1 class="Titulo">Tarjeta StartBank</h1>
+            </div>
+            <div class="justify-content-center w-100" required>
+                <div class="">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Star
+                    </label>
+                </div>
+                <div class="">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Nebulosa
+                    </label>
+                </div>
+                <div class="">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Universo
+                    </label>
+                </div>
+            </div>
             <div class="content">
                 <div class="row">
                     <div class="col">
                         <input class="boton" type="submit" value="Enviar">
                     </div>
                     <div class="col">
-                        <input class="boton" type="reset" value="Cancelar">
+                        <input name="ResetForm" class="boton" type="reset" value="Cancelar">
                     </div>
                 </div>
             </div>
-        </section>
-    
-
-
-            <h1 class="destacado">Informacion laboral</h1>
-            <div>
-                Empresa donde labora: <input type="text" name="empresa" required /><br />
-                <br />
-            </div>
-            <div> Puesto que desempeña: <input type="text" name="puesto" required /><br />
-                <br />
-            </div>
-            <div>Salario aproximado: <select name="salario" required>
-                    <option>₡500.000 a ₡600.000</option>
-                    <option>₡700.000 a ₡800.000</option>
-                    <option>Mas de ₡900.00</option>
-                </select> <br />
-                <br />
-            </div>
-
-            <div>
-                <h1>Tarjeta StartBank</h1>
-
-            </div>
-            <div><input type="radio" name="Tajeta1" id="star" value="star">
-                <label for="star">Star: </label>
-                <br /> <br />
-            </div>
-
-            <div><input type="radio" name="Tajeta2" id="Nebulosa" value="Nebulosa">
-                <label for="Nebulosa">Nebulosa: </label>
-                <br /> <br />
-            </div>
-            <div><input type="radio" name="Tajeta3" id="Universo" value="Universo">
-                <label for="Universo">Universo: </label>
-                <br /> <br />
-            </div>
-            <div><input type="submit" value="Enviar">
-                <input type="reset" value="Cancelar">
-                <br /> <br />
-            </div>
-
-        </div>
         </form>
-
-    </Formularios>
+    </section>
 
     <footer>
         <div id="footer" class="p-4">
@@ -171,10 +156,9 @@
             </div>
         </div>
     </footer>
+<script src="../js/funciones.js"></script>
+    <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    
 </body>
 
 </html>
