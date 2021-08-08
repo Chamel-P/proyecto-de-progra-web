@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarBank</title>
     <link rel="stylesheet" href="../estilo/Seguros.CSS">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilo/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilo/PrimeraPagina.css">
+    <link rel="stylesheet" href="../estilo/estilos.css">
+    <link rel="stylesheet" href="../estilo/general.css">
 </head>
 
 <body>
@@ -17,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark " id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../codigoHtml/PaginaPrincipal.html">
                     <img src="../imagnes/logo.png" alt="" width="200">
                 </a>
 
@@ -34,13 +33,16 @@
                 <div class="container ">
                     <div class="row ">
                         <div class="col border border-6 border border-warning rounded-pill bg-warning  ">
-                            <a class="link-dark font-weight-bold  text-decoration-none" href="solicitud-tarjetas.html">Tarjetas de Credito</a>
+                            <a class="link-dark font-weight-bold  text-decoration-none"
+                                href="../codigoHtml/solicitud-tarjetas.html">Tarjetas de Credito</a>
                         </div>
                         <div class="col border border-6 border border-primary rounded-pill bg-primary">
-                            <a class="link-dark font-weight-bold text-decoration-none" href="#Cuerpo">Seguros </a>
+                            <a class="link-dark font-weight-bold text-decoration-none"
+                                href="../codigoHtml/Seguros.html">Seguros </a>
                         </div>
                         <div class="col border border-6 border border-danger rounded-pill bg-danger">
-                            <a class="link-dark font-weight-bold text-decoration-none" href="#Pie">Quienes somos </a>
+                            <a class="link-dark font-weight-bold text-decoration-none"
+                                href="../codigoHtml/QuienesSomos.html">¿Quiénes somos?</a>
                         </div>
                     </div>
                 </div>
@@ -48,84 +50,124 @@
             </div>
         </nav>
     </header>
-
-    <div class="Publicidad">
-        <img src="../imagnes/Nuestros seguros.png" alt="Seguros StartBank">
-        <h1>¿Desea obtener mas informacion?</h1>
-        <h2>No dude en llenar nuestro formulario para ser contactado</h2>
-    </div>
-
-    <section class="registro">
-        <h1 id="Titulo">Solicitud de Tarjetas</h1>
-        <input class="controles" type="text" name="Nombres" id="nombres" placeholder="Ingrese Nombre">
-        <input class="controles" name="Apellidos" id="Apellidos" placeholder="Ingrese Apellidos">
-        <input class="controles" type="number" name="numero" id="tlf" placeholder="Ingrese telefono celular">
-        <input class="controles" type="number" name="numero casa" id="tlfC" placeholder="Ingrese telefono de casa">
-        <input class="controles" type="email" name="correos" id="correo" placeholder="Ingrese correo">
-        <div class="controles">
-            <label for="exampleFormControlSelect1">Tipo de identificacion</label>
-            <select class="form-control" id="Select1">
-                <option class="color1" selected="selected">Cédula nacional</option>
-                <option class="color1">DIMEX</option>
-                <option class="color1">DIDI</option>
-            </select>
-        </div>
-        <input class="controles" type="number" name="cédula" id="correo" placeholder="0-000-0000" required>
-        <div class="controles">
-            <label for="exampleFormControlSelect1">informacion adicional</label>
-            <textarea class="color1" name="direccion" required cols=30 rows=2></textarea>
-        </div>
-
-
-
-        <div class="content">
+    <div>
+        <div class="container">
             <div class="row">
                 <div class="col">
-                    <input class="boton" type="submit" value="Enviar">
+                    <img src="../imagnes/1.png" alt="" class="prueba">
                 </div>
                 <div class="col">
-                    <input class="boton" type="reset" value="Cancelar">
+                    <img src="../imagnes/2.png" alt="" class="prueba">
                 </div>
             </div>
+            <button type="button" class="boton2 bg-dark"><a href="../codigoHtml/Seguros.html">Solicitar
+                    seguro</a></button>
         </div>
-    </section>
 
-    <footer>
-        <div id="footer" class="p-4">
-            <div class="container w-100 ">
 
-                <div class="row justify-content-md-center py-5">
-                    <div class="col text-center font-weight-light">
-                        <p class="font-weight-bold text-dark h1"> Servicio al cliente telefonico</p>
+        <h1>¿Desea obtener mas informacion?</h1>
+        <h2>No dude en llenar nuestro formulario para ser contactado</h2>
 
-                        <div class="container w-50 pt-1">
-                            <p class="h5 text-danger">Servicio al cliente telefonico donde usted puede ponerse en
-                                contacto con un
-                                asesor de servicio quien le brindara repuesta a sus consultas sobre nuestro
-                                productos y servicios.
-                            </p>
+        <section class="registro">
+            <form id="seguro12" action="conexion.php" method="POST">
+
+                <h1 id="Titulo">Solicitud de seguro</h1>
+
+                <input class="controles" type="text" name="Nombres" id="nombres" placeholder="Ingrese Nombre" required>
+                <input class="controles" name="Apellidos" id="Apellidos" placeholder="Ingrese Apellidos" required>
+                <input class="controles" type="text" name="numero" id="tlf" placeholder="Ingrese telefono celular"
+                    required>
+                <input class="controles" type="text" name="numero casa" id="tlfC" placeholder="Ingrese telefono de casa"
+                    required>
+                <input class="controles" type="email" name="correos" id="correo" placeholder="Ingrese correo" required>
+                <div class="controles">
+                    <label for="exampleFormControlSelect1">Tipo de identificacion</label>
+                    <select class="form-control" id="Select1" required>
+                        <option class="color1" selected="selected">Cédula nacional</option>
+                        <option class="color1">DIMEX</option>
+                        <option class="color1">DIDI</option>
+                    </select>
+                </div>
+                <input class="controles" type="text" name="cédula" id="Ncedula" placeholder="0-000-0000" required>
+                <div class="controles">
+                    <label for="exampleFormControlSelect1">informacion adicional</label>
+                    <textarea class="color1" name="direccion" cols=30 rows=2 id="textadicional"></textarea>
+                </div>
+
+
+                <div class="content">
+                    <div class="row">
+                        <div class="col">
+
+                            <button type="submit" class="boton">
+                                Enviar
+                            </button>
+
+                        </div>
+                        <div class="col">
+                            <input name="ResetForm" class="boton" type="reset" value="Cancelar">
                         </div>
                     </div>
-
                 </div>
-                <div class="row"></div>
-            </div>
+            </form>
+
+            <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
 
 
-            <div class="row row-cols-md-2 justify-content-md-center">
-                <div class="col text-center">
-                    <a href="#">
-                        <button
-                            class="btn btn-lg rounded-pill btn-warning w-75  p-2 shadow-sm font-weight-bold">Contacta
-                            con nuestro <br> Chatboot</button>
-                    </a>
+        </section>
 
+        <footer>
+            <div id="footer" class="p-4">
+                <div class="container w-100 ">
+
+                    <div class="row justify-content-md-center py-5">
+                        <div class="col text-center font-weight-light">
+                            <p class="font-weight-bold text-dark h1"> Servicio al cliente telefonico</p>
+
+                            <div class="container w-50 pt-1">
+                                <p class="h5 text-danger">Servicio al cliente telefonico donde usted puede ponerse en
+                                    contacto con un
+                                    asesor de servicio quien le brindara repuesta a sus consultas sobre nuestro
+                                    productos y servicios.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row"></div>
+                </div>
+
+
+                <div class="row row-cols-md-2 justify-content-md-center">
+                    <div class="col text-center">
+                        <a href="#">
+                            <button
+                                class="btn btn-lg rounded-pill btn-warning w-75  p-2 shadow-sm font-weight-bold">Contacta
+                                con nuestro <br> Chatboot</button>
+                        </a>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-<script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        </footer>
+        <script src="../js/funciones.js"></script>
+        <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 

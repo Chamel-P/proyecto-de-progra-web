@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarBank</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilo/bootstrap.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../estilo/estilos.css">
     <link rel="stylesheet" href="../estilo/PrimeraPagina.css">
+    <link rel="stylesheet" href="../estilo/general.css">
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark " id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="">
                     <img src="../imagnes/logo.png" alt="" width="200">
                 </a>
 
@@ -25,23 +27,55 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-               
+
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-sm navbar-dark ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col border border-6 border border-warning rounded-pill bg-warning  ">
+                            <a class="link-dark font-weight-bold  text-decoration-none"
+                                href="../codigoHtml/solicitud-tarjetas.html">Tarjetas de Credito</a>
+                        </div>
+                        <div class="col border border-6 border border-primary rounded-pill bg-primary">
+                            <a class="link-dark font-weight-bold text-decoration-none"
+                                href="../codigoHtml/Seguros.html">Seguros </a>
+                        </div>
+                        <div class="col border border-6 border border-danger rounded-pill bg-danger">
+                            <a class="link-dark font-weight-bold text-decoration-none"
+                                href="../codigoHtml/QuienesSomos.html">¿Quiénes somos?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </nav>
     </header>
 
-    <div id="mainSlider" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/imagnes/fondo.jpg" class="d-block w-100" alt="...">
+                <img src="/imagnes/fondo.jpg" alt="">
             </div>
             <div class="carousel-item">
-                <img src="/imagnes/Nuestros seguros.png" class="d-block w-100" alt="...">
+                <img src="/imagnes/Nuestros seguros.png" class="d-block w-100" alt="..." >
             </div>
             <div class="carousel-item">
                 <img src="/imagnes/tarjetas.png" class="d-block w-100" alt="...">
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <div id="separator-ribbon">
@@ -64,6 +98,7 @@
                 <div class="col-sm ">
                     <div class="card w-100 card-border mb-5">
                         <img src="../imagnes/tarjetas.png" class="card-img-top bg-dark" alt="...">
+                        <p class="h3 bg-dark">Nebulosa</p>
                         <div class="card-body bg-dark">
                             <p class="card-text">-Acomula un punto por dolar en Supermercado, Gasolineras, Restaurante y
                                 tiendas. <br>
@@ -75,6 +110,7 @@
                 <div class="col-sm">
                     <div class="card w-100 card-border mb-5">
                         <img src="../imagnes/tarjetas.png" class="card-img-top bg-dark" alt="...">
+                        <p class="h3 bg-dark">Star</p>
                         <div class="card-body bg-dark">
                             <p class="card-text">-Acomula un 5% de Walmart Cash al realizar tus compras en Walmart,
                                 Mascmenos, Maxipali y Pali. <br>
@@ -87,6 +123,7 @@
                 <div class="col-sm">
                     <div class="card w-100 card-border mb-5">
                         <img src="../imagnes/tarjetas.png" class="card-img-top bg-dark" alt="...">
+                        <p class="h3 bg-dark">Universo</p>
                         <div class="card-body bg-dark">
                             <p class="card-text">-Recibi beneficios exclusivos en tus comerciosfavoritos. <br>
                                 -Poder usar tu tarjeta para comprar locales, internacionales, por internet o en
@@ -99,7 +136,9 @@
             </div>
         </div>
     </div>
-    
+    <button type="button" class="boton2 bg-dark"><a href="../codigoHtml/solicitud-tarjetas.html">Solicitar
+            tarjeta</a></button>
+
     <footer>
         <div id="footer" class="p-4">
             <div class="container w-100 ">
@@ -135,9 +174,7 @@
         </div>
     </footer>
 
-    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    
+    <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
