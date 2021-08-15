@@ -1,10 +1,18 @@
-FormSeguro.addEventListener('submit', (e) => {
-    e.preventDefault();
+const FormSeguro = document.getElementById('seguro');
+const InputSeguro = document.querySelectorAll('#seguro input');
 
-    if (InputSeguro[0].value != "" && InputSeguro[1].value != "" && InputSeguro[2].value != ""
-        && InputSeguro[3].value != "" && InputSeguro[4].value != "" && InputSeguro[5].value != "" && InputSeguro[6].value != "") {
-        alert("Datos enviados")
-        return true;
-    }
+
+
+FormSeguro.addEventListener('submit', (e) => {
+    if (InputSeguro[0].value != "" && InputSeguro[1].value != "" && InputSeguro[4].value != "" && InputSeguro[5].value != "" && InputSeguro[6].value != "") {
+    alert("Datos enviados")
+    return true;
+
+}else{
+    alert("Complete todos los campos")
+    return false;
+}
+
+
 
 });
